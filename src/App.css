@@ -13,15 +13,20 @@
   }
 }
 
+.d1{
+  position: relative; /* Относительное позиционирование */
+  top: 82px; /* Расстояние от верхнего края */
+  left: 170px; /* Расстояние от левого края */
+  right: 0;
+}
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  margin:50px 50px 50px 50px;
+
 }
 
 .App-link {
@@ -35,4 +40,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.sidebar, .content { position: absolute; }
+.sidebar, .content { overflow: auto; padding: 10px; }
+.header {
+ height: 80px; /* Высота слоя */
+ background: #FEFFFF; border-bottom: 2px solid #7B5427;
+}
+.header h1 { padding: 20px; margin: 0; }
+.sidebar {
+ width: 150px; background: #FFFFFF; border-right: 1px solid #231F20;
+ top: 82px; /* Расстояние от верхнего края */
+ bottom: 0; /* Расстояние снизу  */
+}
+.content {
+ top: 82px; /* Расстояние от верхнего края */
+ left: 170px; /* Расстояние от левого края */
+ bottom: 0; right: 0;
+}
+
+.shrift{
+  font-family: "Comic Sans MS";
+  /* font-size: 50px; */
 }
