@@ -58,11 +58,14 @@
  /* background: #e9e9e9; */
  border-bottom: 2px solid #7B5427;
 }
-.f{
-    /* padding: 3px;  */
-    text-align: left;
-    border: 1;
-   }
+.th {
+  background: #afd792; /* Цвет фона */
+  color: #333;  /* Цвет текста */
+ }
+.tbody, .tr:hover {
+  background: #f3bd48; /* Цвет фона при наведении */
+  color: #fff; /* Цвет текста при наведении */
+ }
 .header h1 { padding: 20px; margin: 0; }
 .sidebar {
  overflow: scroll;
