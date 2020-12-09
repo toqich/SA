@@ -18,7 +18,7 @@
 .tabs>label {
     display: inline-block;
     padding: 7px;
-    margin: -15 -15px -1px 0;
+    margin: -15px -15px -1px 0;
     text-align: center;
     color: #666666;
     border: 1px solid #C0C0C0;
@@ -56,7 +56,7 @@
 
 }
 .liniya {
-  border-bottom: "2px solid";
+  border-bottom: 2px solid;
 }
 .App-link {
   color: #61dafb;
@@ -104,7 +104,6 @@
  bottom: 249px;
 }
 .content2 {
- overflow: scroll-;
  top: 82px;
 }
 
@@ -123,7 +122,7 @@ resize: none;
   border-left: 2px solid #231F20;
   border-top: 2px solid #231F20;
   /* top: 82px; */
-  bottom: 0px;
+  bottom: 0;
   text-align: left;
 }
 .content3 {

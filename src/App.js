@@ -8,7 +8,7 @@ function App() {
   const [tabs3, setTabs3] = useState(1);
   return (
     <body className="shrift">
-    <div className="liniya">
+    <div className="">
       <h1 style={{ paddingBottom: "17px", borderBottom: "2px solid" }}><i>Аналитика проблем</i><small
         style={{ fontSize: "13px", marginLeft: "995px" }}><a href="URL">Выйти</a></small></h1>
 
