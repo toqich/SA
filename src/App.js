@@ -10,7 +10,7 @@ function App() {
     <body className="shrift">
     <div className="">
       <h1 style={{ paddingBottom: "17px", borderBottom: "2px solid" }}><i>Аналитика проблем</i><small
-        style={{ fontSize: "13px", marginLeft: "995px" }}><a href="URL">Выйти</a></small></h1>
+        style={{ fontSize: "13px", marginLeft: "955px" }}><a href="URL">Выйти</a></small></h1>
 
     </div>
     <div className="sidebar">
@@ -46,7 +46,14 @@ function App() {
         <div id="txt_2">
           <tbody>
           <tr>
-            <td bgcolor="#f1f1f1">Рейсы</td>
+            <td bgcolor="#f1f1f1"><textarea className="norm_text" style={{ height: 20, width: 100, resize: "none" }}
+                                            disabled="true">Рейсы</textarea></td>
+            <td>
+              <button style={{ marginLeft: "3px" }}>&#9998;</button>
+            </td>
+            <td>
+              <button style={{ marginLeft: "1px" }}>&#10008;</button>
+            </td>
           </tr>
           </tbody>
         </div>
@@ -257,6 +264,7 @@ function App() {
             </tr>
             </tbody>
           </table>
+          <button  disabled="true">Проблема отмечена как решенная</button>
         </div>
         }
       </div>

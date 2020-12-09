@@ -10,7 +10,6 @@
 .tabs { width: 100%; padding-top: 15px; margin: 0 auto; }
 .tabs>input[type=radio] { display: none; }
 .tabs>div {
-    /*display: none;*/
     padding: 12px;
     /* border: 1px solid #C0C0C0; */
     background: #FFFFFF;
@@ -30,15 +29,6 @@
     border-bottom: 1px solid #FFFFFF;
     background: #FFFFFF;
 }
-/*#tab_1:checked ~ #txt_1,*/
-/*#tab_2:checked ~ #txt_2 { display: block; }*/
-/*#tab_3:checked ~ #txt_3,*/
-/*#tab_4:checked ~ #txt_4,*/
-/*#tab_5:checked ~ #txt_5 { display: block; }*/
-/*#tab_6:checked ~ #txt_6,*/
-/*#tab_7:checked ~ #txt_7 { display: block; }*/
-
-
 .d1{
   position: relative; /* Относительное позиционирование */
   top: 82px; /* Расстояние от верхнего края */
@@ -65,11 +55,6 @@
 .sidebar2, .content2 { position: absolute; }
 .sidebar, .content { overflow: auto; padding: 10px; }
 .sidebar2, .content2 { overflow: auto; padding: 10px; }
-.sidebar3, .content3 {
-  overflow: auto;
-  padding: 10px;
-  position: absolute;
-}
 .header {
  text-align: right;
  padding-right: 10px;
@@ -89,7 +74,7 @@
 }
 .content {
  top: 58px;
- left: 220px;
+ left: 240px;
  bottom: 0; right: 0;
 }
 .sidebar2 {
@@ -113,19 +98,6 @@ color: #000;
 height: 16px;
 width: 120px;
 resize: none;
-}
-.sidebar3 {
-  top: 375px;
-  left: 1104px;
-  width: 240px;
-  border-left: 2px solid #231F20;
-  border-top: 2px solid #231F20;
-  /* top: 82px; */
-  bottom: 0;
-  text-align: left;
-}
-.content3 {
- top: 400px;
 }
 
 .shrift{
