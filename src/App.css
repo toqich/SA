@@ -10,7 +10,7 @@
 .tabs { width: 100%; padding-top: 15px; margin: 0 auto; }
 .tabs>input[type=radio] { display: none; }
 .tabs>div {
-    display: none;
+    /*display: none;*/
     padding: 12px;
     /* border: 1px solid #C0C0C0; */
     background: #FFFFFF;
@@ -25,19 +25,19 @@
     background: #E0E0E0;
     cursor: pointer;
 }
-.tabs>input:checked + label {
+.tabs>.active_label {
     color: #000000;
     border: 1px solid #C0C0C0;
     border-bottom: 1px solid #FFFFFF;
     background: #FFFFFF;
 }
-#tab_1:checked ~ #txt_1,
-#tab_2:checked ~ #txt_2 { display: block; }
-#tab_3:checked ~ #txt_3,
-#tab_4:checked ~ #txt_4,
-#tab_5:checked ~ #txt_5 { display: block; }
-#tab_6:checked ~ #txt_6,
-#tab_7:checked ~ #txt_7 { display: block; }
+/*#tab_1:checked ~ #txt_1,*/
+/*#tab_2:checked ~ #txt_2 { display: block; }*/
+/*#tab_3:checked ~ #txt_3,*/
+/*#tab_4:checked ~ #txt_4,*/
+/*#tab_5:checked ~ #txt_5 { display: block; }*/
+/*#tab_6:checked ~ #txt_6,*/
+/*#tab_7:checked ~ #txt_7 { display: block; }*/
 
 
 .d1{
