@@ -31,7 +31,7 @@ function App() {
           <tbody>
           <tr>
             <td bgcolor="#f1f1f1"><textarea className="norm_text" style={{ height: 20, width: 100, resize: "none" }}
-                                            disabled="true">Рейсы</textarea></td>
+                                            disabled="true">Транспорт</textarea></td>
             <td>
               <button style={{ marginLeft: "3px" }}>&#9998;</button>
             </td>
@@ -62,14 +62,14 @@ function App() {
     </div>
     <div className="content">
       <tr>
-        <td><h3>Формулировка проблемы Рейсы</h3></td>
+        <td><h3>Формулировка проблемы Транспорт</h3></td>
         <td>
           <button style={{ marginLeft: "655px" }}>Сохранить изменения</button>
         </td>
         <td></td>
       </tr>
       <p></p>
-      <textarea className="norm_text" style={{ height: 40, width: 1100, resize: "none" }} disabled="true">Авиакомпания «S7» получила возможность приобрести самолет Боинг 747. Встал вопрос об открытии нового чартерного рейса. Нужно определить наиболее выгодное направление.</textarea>
+      <textarea className="norm_text" style={{ height: 40, width: 1100, resize: "none" }} disabled="true">Решение транспортной проблемы в густозаселенном новом районе города.</textarea>
       <p></p>
       <div class="tabs">
         <label style={{ fontSize: "13px" }} className={tabs1 === 1 ? "active_label" : ""}
@@ -89,58 +89,37 @@ function App() {
             <tbody>
             <tr>
               <td>1.</td>
-              <td><textarea className="norm_text" style={{ height: 15, resize: "none" }}
-                            disabled="true">Сочи</textarea></td>
+              <td><textarea className="norm_text" disabled="true">Строительство новой ветки метро</textarea></td>
               <td>
                 <button style={{ marginLeft: "38px" }} disabled="true">&#10008;</button>
               </td>
             </tr>
             <tr>
               <td>2.</td>
-              <td><textarea className="norm_text" style={{ height: 15, resize: "none" }}
-                            disabled="true">Пекин</textarea></td>
+              <td><textarea className="norm_text" disabled="true">Расширение парка муниципальных автобусов</textarea></td>
               <td>
-                <button style={{ marginLeft: "38px" }} disabled="true">&#10008;</button>
+                <button style={{ marginLeft: "38px" }}  disabled="true">&#10008;</button>
               </td>
             </tr>
             <tr>
               <td>3.</td>
-              <td><textarea className="norm_text" style={{ height: 15, resize: "none" }}
-                            disabled="true">Сеул</textarea></td>
+              <td><textarea className="norm_text"  disabled="true">Расширение транспортной сети</textarea></td>
               <td>
-                <button style={{ marginLeft: "38px" }} disabled="true">&#10008;</button>
+                <button style={{ marginLeft: "38px" }}  disabled="true">&#10008;</button>
               </td>
             </tr>
             <tr>
               <td>4.</td>
-              <td><textarea className="norm_text" style={{ height: 15, resize: "none" }}
-                            disabled="true">Владивосток</textarea></td>
+              <td><textarea className="norm_text" disabled="true">Ввод скоростного трамвая</textarea></td>
               <td>
-                <button style={{ marginLeft: "38px" }} disabled="true">&#10008;</button>
+                <button style={{ marginLeft: "38px" }}  disabled="true">&#10008;</button>
               </td>
             </tr>
             <tr>
               <td>5.</td>
-              <td><textarea className="norm_text" style={{ height: 15, resize: "none" }}
-                            disabled="true">Таль-Авив</textarea></td>
+              <td><textarea className="norm_text" disabled="true">Оптимизация структуры движения городских маршрутов</textarea></td>
               <td>
-                <button style={{ marginLeft: "38px" }} disabled="true">&#10008;</button>
-              </td>
-            </tr>
-            <tr>
-              <td>6.</td>
-              <td><textarea className="norm_text" style={{ height: 15, resize: "none" }}
-                            disabled="true">Анталия</textarea></td>
-              <td>
-                <button style={{ marginLeft: "38px" }} disabled="true">&#10008;</button>
-              </td>
-            </tr>
-            <tr>
-              <td>7.</td>
-              <td><textarea className="norm_text" style={{ height: 15, resize: "none" }}
-                            disabled="true">Симфеврополь</textarea></td>
-              <td>
-                <button style={{ marginLeft: "38px" }} disabled="true">&#10008;</button>
+                <button style={{ marginLeft: "38px" }}  disabled="true">&#10008;</button>
               </td>
             </tr>
             </tbody>
@@ -165,7 +144,7 @@ function App() {
                   <tr>
                     <td bgcolor="#f1f1f1">Эксперт 1</td>
                     <td>
-                      <button className="norm_text" style={{ marginLeft: "65px", backgroundColor: "#CCFF99" }}
+                      <button className="norm_text_expert" style={{ marginLeft: "65px", backgroundColor: "#CCFF99" }}
                               disabled="true">(100%)&#10004;</button>
                     </td>
                   </tr>
@@ -175,11 +154,12 @@ function App() {
               }
               {tabs2 === 2 &&
               <>
-                <table>
+                <table  border="1">
                   <tr>
                     <th>Имя</th>
                     <th>Должность</th>
                     <th>Стаж</th>
+                    <th>Оценка компетентности</th>
                     <th>Состояние оценивания</th>
                     <th>
                       <button style={{ marginLeft: "38px" }}>Выбрать всех</button>
@@ -187,17 +167,19 @@ function App() {
                   </tr>
                   <tbody>
                   <tr>
-                    <td><textarea className="norm_text">Эксперт 1</textarea></td>
-                    <td><textarea className="norm_text">Преподаватель</textarea></td>
-                    <td><textarea className="norm_text">1</textarea></td>
-                    <td>Метод парных сравнений (50%)</td>
-                    <td><input type="checkbox" style={{ marginLeft: "38px" }} disabled="true"></input></td>
+                    <td><textarea className="norm_text_expert">Эксперт 1</textarea></td>
+                    <td><textarea className="norm_text_expert" style={{width: "200px", height: "32px"}}>Главный архитектор города</textarea></td>
+                    <td><textarea className="norm_text_expert" style={{width: "30px"}}>30</textarea></td>
+                    <td><textarea className="norm_text_expert" style={{width: "30px"}}>8</textarea></td>
+                    <td>Метод парных оценок(100%)<br/>Метод взвешенных оценок(60%)</td>
+                    <td><input type="checkbox" style={{ marginLeft: "38px" }} checked="checked" disabled="true"></input></td>
                   </tr>
                   <tr>
-                    <td><textarea className="norm_text">Эксперт 2</textarea></td>
-                    <td><textarea className="norm_text">Преподаватель</textarea></td>
-                    <td><textarea className="norm_text">2</textarea></td>
-                    <td>Не назначен</td>
+                    <td><textarea className="norm_text_expert">Эксперт 2</textarea></td>
+                    <td><textarea className="norm_text_expert" style={{width: "200px", height: "32px"}}>Председатель комитета по градоустройству</textarea></td>
+                    <td><textarea className="norm_text_expert" style={{width: "30px"}}>15</textarea></td>
+                    <td><textarea className="norm_text_expert" style={{width: "30px"}}>6.5</textarea></td>
+                    <td>Метод парных оценок(0%)<br/>Метод взвешенных оценок(0%)</td>
                     <td><input type="checkbox" style={{ marginLeft: "38px" }}></input></td>
                   </tr>
 
@@ -219,52 +201,93 @@ function App() {
         }
         {tabs1 === 3 &&
         <div id="txt_5">
-          <b>Результат №1</b>
-          <table text-align="left">
-            <tr>
-              <th>Ранг</th>
-              <th>Вес</th>
-              <th>Альтернатива</th>
+        <p>Выберите эксперта, результаты которого вы хотите посмотреть:</p>
+        <select id="selectvalue">
+          <option disabled>Выберите эксперта</option>
+          <option>Эксперт 1</option>
+          <option>Эксперт 2</option>
+        </select><br/>
+          <b>Метод парных сравнений</b>
+          <tr><td>
+              </td>
+              <td style={{ marginLeft: "10px" }}>
+              <table text-align="left" border="1px">
+                <tr>
+                  <th width="5px">Ранг</th>
+                  <th width="10px">Вес</th>
+                  <th width="40px">Альтернатива</th>
+                </tr>
+                <tbody>
+                <tr>
+                  <td height="16px" width="20px">1.</td>
+                  <td height="16px" >0.45</td>
+                  <td height="16px">Строительство новой ветки метро</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>0.218</td>
+                  <td>Расширение парка муниципальных автобусов</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>0.166</td>
+                  <td>Оптимизация структуры движения городских маршрутов</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>0.166</td>
+                  <td>Ввод скоростного трамвая</td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>0</td>
+                  <td>Расширение транспортной сети</td>
+                </tr>
+                </tbody>
+              </table>
+              </td>
             </tr>
-            <tbody>
-            <tr>
-              <td>1.</td>
-              <td>0.26</td>
-              <td>Симфеврополь</td>
-            </tr>
-            <tr>
-              <td>2.</td>
-              <td>0.19</td>
-              <td>Анталия</td>
-            </tr>
-            <tr>
-              <td>3.</td>
-              <td>0.166</td>
-              <td>Сочи</td>
-            </tr>
-            <tr>
-              <td>3.</td>
-              <td>0.166</td>
-              <td>Пекин</td>
-            </tr>
-            <tr>
-              <td>4.</td>
-              <td>0.09</td>
-              <td>Сеул</td>
-            </tr>
-            <tr>
-              <td>4.</td>
-              <td>0.09</td>
-              <td>Таль-Авив</td>
-            </tr>
-            <tr>
-              <td>5.</td>
-              <td>0.02</td>
-              <td>Владивосток</td>
-            </tr>
-            </tbody>
-          </table>
-          <button  disabled="true">Проблема отмечена как решенная</button>
+            <b>Метод взвешенных оценок</b>
+            <tr><td>
+                </td>
+                <td style={{ marginLeft: "10px" }}>
+                <table text-align="left" border="1px">
+                  <tr>
+                    <th width="5px">Ранг</th>
+                    <th width="10px">Вес</th>
+                    <th width="40px">Альтернатива</th>
+                  </tr>
+                  <tbody>
+                  <tr>
+                    <td height="16px" width="20px">1.</td>
+                    <td height="16px" >0.3</td>
+                    <td height="16px">Ввод скоростного трамвая</td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>0.2</td>
+                    <td>Строительство новой ветки метро</td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>0.2</td>
+                    <td>Расширение транспортной сети</td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>0.15</td>
+                    <td>Расширение парка муниципальных автобусов</td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>0.15</td>
+                    <td>Оптимизация структуры движения городских маршрутов</td>
+                  </tr>
+                  </tbody>
+                </table>
+                </td>
+              </tr>
+          <button >Отметить проблему как решенную</button>
         </div>
         }
       </div>
