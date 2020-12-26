@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 //import './index.css';
 import App from './App';
-// import Expert from './Expert'
+import Expert from './Expert'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <App/>
+    <Expert/>
   </React.StrictMode>,
   document.getElementById('root')
 );
