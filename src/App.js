@@ -62,7 +62,7 @@ function App() {
     </div>
     <div className="content">
       <tr>
-        <td><h3>Формулировка проблемы Студенты</h3></td>
+        <td><h3>Формулировка проблемы Студенты </h3></td>
         <td>
           <button style={{ marginLeft: "655px" }}>Сохранить изменения</button>
         </td>
