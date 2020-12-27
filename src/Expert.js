@@ -22,19 +22,19 @@ class Expert extends Component {
     render() {
         return (
             <body className="shrift">
-                <div className="liniya">
-                    <h1 style={{ paddingBottom: "17px", borderBottom: "2px solid" }}><i>Оценивание проблем</i> <i style={{ marginLeft: "250px", color: "blue" }}>Эксперт 2</i><small style={{ fontSize: "13px", marginLeft: "995px" }}><a href="URL">Выйти</a></small></h1>
+                <div className="">
+                    <h1 style={{ paddingBottom: "17px", borderBottom: "2px solid" }}><i>Оценивание проблем</i> <i style={{ marginLeft: "250px", color: "blue" }}>Эксперт 3</i><small style={{ fontSize: "13px", marginLeft: "995px" }}><a href="URL">Выйти</a></small></h1>
                     <div className="sidebar">
                         <table>
                             <tr><b>Проблемы</b><td></td></tr>
                             <tbody>
-                                <tr><td >№1 Рейсы </td></tr>
-                                <tr><td bgcolor="#f1f1f1">№2 Транспорт </td></tr>
+                                {/*<tr><td >№1 Рейсы </td></tr>*/}
+                                <tr><td bgcolor="#f1f1f1">№1 Веб-студия</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div className="content">
-                        <p style={{ width: "500px" }}>Решение транспортной проблемы в густозаселенном новом районе города. </p>
+                        <p style={{ width: "500px" }}>Низкая производительность студий веб-дизайна является в наше время актуальной проблемой. Так как сейчас в быстром темпе развиваются информационные технологии, то и большинство сфер деятельности уходит в «on-line», для такого перехода необходимы специалисты и компании, которые помогут произвести такой переход и обеспечат онлайн платформами и сайтами такой бизнес. Для этого веб студии должны производить продукт вовремя, и он должен быть качественный, а для этого студии должны иметь квалифицированных сотрудников. </p>
                         <div class="tabs">
                             <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked />
                             <label for="tab-btn-1">МПС</label>
@@ -74,11 +74,11 @@ class Expert extends Component {
                                 <p>Текущая сумма: 1</p>
                                 <p style={{ backgroundColor: "greenyellow" }}>Результаты отправлены</p>
                                 <table className="border-table">
-                                    <tr ><td >Строительство новой ветки метро</td><td><textarea></textarea></td></tr>
-                                    <tr><td>Расширение парка муниципальных автобусов</td><td><textarea></textarea></td></tr>
-                                    <tr><td>Расширение транспортной сети</td><td><textarea></textarea></td></tr>
-                                    <tr><td>Ввод скоростного трамвая</td><td><textarea></textarea></td></tr>
-                                    <tr><td>Оптимизация структуры движения городских маршрутов</td><td><textarea></textarea></td></tr>
+                                    <tr ><td >Качественный отбор новых кадров в веб-студии</td><td><textarea></textarea></td></tr>
+                                    <tr><td>Назначение новым сотрудникам наставника с целью быстрой адаптации в проекте</td><td><textarea></textarea></td></tr>
+                                    <tr><td>Проведение регулярных встреч, на которых команда обсуждает и анализирует свой рабочий процесс с целью устранения возникающих трудностей</td><td><textarea></textarea></td></tr>
+                                    <tr><td>Составление и обсуждение плана работы перед началом проекта</td><td><textarea></textarea></td></tr>
+                                    <tr><td>Предоставление возможности повышение квалификации сотрудников за счет компании</td><td><textarea></textarea></td></tr>
                                 </table>
                                 <p></p>
                                 <button className='container' onClick={this.submit} style={{ marginLeft: "150px" }}>Отправить результаты</button>
@@ -92,11 +92,11 @@ class Expert extends Component {
                                 <p style={{ backgroundColor: "greenyellow" }}>Результаты отправлены</p>
 
                                 <table className="border-table">
-                                    <tr ><td >Строительство новой ветки метро</td><td><textarea></textarea></td></tr>
-                                    <tr><td>Расширение парка муниципальных автобусов</td><td><textarea></textarea></td></tr>
-                                    <tr><td>Расширение транспортной сети</td><td><textarea></textarea></td></tr>
-                                    <tr><td>Ввод скоростного трамвая</td><td><textarea></textarea></td></tr>
-                                    <tr><td>Оптимизация структуры движения городских маршрутов</td><td><textarea></textarea></td></tr>
+                                    <tr ><td >Качественный отбор новых кадров в веб-студии</td><td><textarea></textarea></td></tr>
+                                    <tr><td>Назначение новым сотрудникам наставника с целью быстрой адаптации в проекте</td><td><textarea></textarea></td></tr>
+                                    <tr><td>Проведение регулярных встреч, на которых команда обсуждает и анализирует свой рабочий процесс с целью устранения возникающих трудностей</td><td><textarea></textarea></td></tr>
+                                    <tr><td>Составление и обсуждение плана работы перед началом проекта</td><td><textarea></textarea></td></tr>
+                                    <tr><td>Предоставление возможности повышение квалификации сотрудников за счет компании</td><td><textarea></textarea></td></tr>
                                 </table>
                                 <p></p>
                                 <button className='container' onClick={this.submit} style={{ marginLeft: "150px" }}>Отправить результаты</button>
@@ -106,13 +106,13 @@ class Expert extends Component {
                             <div id="content-4">
                                 <p>Поставьте оценки кажому предложению от 1 до 10, где 10 - наиболее предпочтительный вариант, 1 - наименеепредпочтительный вариант.</p>
                                 {/* <p style={{backgroundColor: "red"}}>Внимание! Оценки должны быть от 1 до 10 и не должны совпадать.</p> */}
-                                <p style={{backgroundColor: "greenyellow"}}>Результаты отправлены</p> 
+                                <p style={{backgroundColor: "greenyellow"}}>Результаты отправлены</p>
                                 <table className="border-table">
-                                    <tr ><td >Строительство новой ветки метро</td><td><textarea></textarea></td></tr>
-                                    <tr><td>Расширение парка муниципальных автобусов</td><td><textarea></textarea></td></tr>
-                                    <tr><td>Расширение транспортной сети</td><td><textarea></textarea></td></tr>
-                                    <tr><td>Ввод скоростного трамвая</td><td><textarea></textarea></td></tr>
-                                    <tr><td>Оптимизация структуры движения городских маршрутов</td><td><textarea></textarea></td></tr>
+                                    <tr ><td >Качественный отбор новых кадров в веб-студии</td><td><textarea></textarea></td></tr>
+                                    <tr><td>Назначение новым сотрудникам наставника с целью быстрой адаптации в проекте</td><td><textarea></textarea></td></tr>
+                                    <tr><td>Проведение регулярных встреч, на которых команда обсуждает и анализирует свой рабочий процесс с целью устранения возникающих трудностей</td><td><textarea></textarea></td></tr>
+                                    <tr><td>Составление и обсуждение плана работы перед началом проекта</td><td><textarea></textarea></td></tr>
+                                    <tr><td>Предоставление возможности повышение квалификации сотрудников за счет компании</td><td><textarea></textarea></td></tr>
                                 </table>
                                 <p></p>
                                 <button className='container' onClick={this.submit} style={{ marginLeft: "150px" }}>Отправить результаты</button>
