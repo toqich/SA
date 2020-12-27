@@ -9,7 +9,7 @@ function App() {
   return (
     <body className="shrift">
     <div className="">
-      <h1 style={{ paddingBottom: "17px", borderBottom: "2px solid" }}><i>Аналитика проблем</i><small
+      <h1 style={{ paddingBottom: "17px", borderBottom: "2px solid" }}><i>Аналитика проблем </i><small
         style={{ fontSize: "13px", marginLeft: "955px" }}><a href="URL">Выйти</a></small></h1>
 
     </div>
